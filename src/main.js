@@ -4,6 +4,9 @@ import App from "./App.vue";
 import "./styles/global.less";
 import router from "./router/index.js";
 
+import showMessage from "./utils/showMessage";
+Vue.prototype.$showMessage = showMessage;
+
 new Vue({
   router,
   render: (h) => h(App),
